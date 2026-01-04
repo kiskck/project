@@ -257,6 +257,8 @@ section {
 }
 
 .work-card {
+  cursor: pointer;                 /* курсор-рука */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   border-radius: 18px;
   border: 1px solid #3A4A3C;
   background: #222727;
@@ -268,9 +270,18 @@ section {
 }
 
 .work-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   border-color: #8B9A6B;
   box-shadow: 0 16px 48px rgba(139, 154, 107, 0.35);
+}
+
+.work-more {
+  display: none;
+  margin-top: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #D4A574;
 }
 
 .work-image-placeholder {
@@ -507,7 +518,9 @@ footer {
   header {
     padding-top: 24px;
   }
-
+    .work-more {
+    text-align: center;
+  }
   
   .work-gallery-text {
     align-items: center;
@@ -516,6 +529,16 @@ footer {
   .work-gallery-text p {
     margin-left: auto;
     margin-right: auto;
+  }
+
+    .work-more {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #D4A574;
+    text-align: center;
   }
 
 
@@ -529,6 +552,12 @@ footer {
   .logo {
     justify-content: center;   /* логотип по центру */
   }
+
+    .logo img {
+    height: 120px;             /* уменьшенный логотип на телефоне */
+    width: auto;
+  }
+
 
   nav ul {
     justify-content: center;   /* ссылки меню по центру */
