@@ -682,6 +682,15 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  /* карточки работ на мобильной версии — одинаковая ширина */
+  .works-grid {
+    justify-items: stretch;
+  }
+
+  .work-card {
+    width: 100%;
+  }
+
   .service-card,
   .work-card,
   .about-aside,
