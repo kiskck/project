@@ -353,6 +353,19 @@ section {
 }
 
 
+/* ссылки внутри описания работы — выделяем на фоне текста */
+.work-detail-text-only a {
+  color: #D4A574;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.work-detail-text-only a:hover {
+  color: #E0B588;
+  text-decoration-thickness: 2px;
+}
+
+
 .work-body {
   padding: 14px 16px 16px;
   font-size: 14px;
